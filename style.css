@@ -38,3 +38,51 @@ button {
 button:hover {
     background-color: #f5d49d;
 }
+.cadastro {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #1d1d1d;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #3a3329;
+}
+
+.cadastro h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.cadastro p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.cadastro label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #f5ead7;
+    font-weight: bold;
+}
+
+.cadastro input,
+.cadastro select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background-color: #292929;
+    color: white;
+    font-size: 16px;
+}
+
+.cadastro input:focus,
+.cadastro select:focus {
+    outline: 2px solid #e8bd78;
+}
+
+.cadastro button {
+    width: 100%;
+    margin-top: 30px;
+}
