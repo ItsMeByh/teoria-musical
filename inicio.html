@@ -20,4 +20,56 @@
             <p>Continue sua jornada musical.</p>
         </header>
 
-        <section class="
+        <section class="estatisticas">
+
+            <div class="cartao">
+                <h2>🔥 Sequência</h2>
+                <p>1 dia</p>
+            </div>
+
+            <div class="cartao">
+                <h2>⭐ XP</h2>
+                <p>0 XP</p>
+            </div>
+
+            <div class="cartao">
+                <h2>🎼 Nível</h2>
+                <p id="nivelUsuario">Iniciante</p>
+            </div>
+
+        </section>
+
+        <h2 class="titulo-secao">O que vamos estudar?</h2>
+
+        <section class="menu-estudos">
+
+            <button>📚 Aprender</button>
+            <button>🎼 Solfejo</button>
+            <button>🎧 Ouvido Musical</button>
+            <button>🎮 Desafios</button>
+            <button>📖 História da Música</button>
+            <button>🤖 Professor IA</button>
+            <button>🏆 Conquistas</button>
+            <button>📊 Progresso</button>
+            <button>👤 Perfil</button>
+
+        </section>
+
+    </main>
+
+    <script>
+        const nome = localStorage.getItem("nome");
+        const nivel = localStorage.getItem("nivel");
+
+        if (nome) {
+            document.getElementById("nomeUsuario").textContent = nome;
+        }
+
+        if (nivel) {
+            document.getElementById("nivelUsuario").textContent = nivel;
+        }
+    </script>
+
+</body>
+
+</html>
