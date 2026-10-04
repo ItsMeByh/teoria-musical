@@ -86,3 +86,107 @@ button:hover {
     width: 100%;
     margin-top: 30px;
 }
+
+
+/* ===== PÁGINA INICIAL ===== */
+
+.home {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.boas-vindas {
+    margin-bottom: 30px;
+}
+
+.boas-vindas h1 {
+    font-size: 42px;
+    margin: 8px 0;
+    color: #e8bd78;
+}
+
+.boas-vindas p {
+    margin-bottom: 5px;
+}
+
+
+/* Cartões de estatísticas */
+
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.cartao {
+    background: #1d1d1d;
+    border: 1px solid #3a3329;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.cartao h2 {
+    font-size: 16px;
+    color: #c9c2b8;
+    margin-bottom: 10px;
+}
+
+.cartao p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e8bd78;
+    margin: 0;
+}
+
+.titulo-secao {
+    margin-bottom: 20px;
+}
+
+/* Áreas de estudo */
+
+.menu-estudos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.menu-estudos button {
+    min-height: 100px;
+    font-size: 17px;
+    text-align: left;
+    padding: 20px;
+}
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .home {
+        padding: 25px 18px;
+    }
+
+    .boas-vindas h1 {
+        font-size: 34px;
+    }
+
+    .estatisticas {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-estudos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-estudos button {
+        min-height: 90px;
+        padding: 15px;
+    }
+}
