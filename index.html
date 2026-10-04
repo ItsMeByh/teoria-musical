@@ -4,17 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Teoria Musical</title>
 </head>
 
 <body>
 
-    <h1>🎵 Teoria Musical</h1>
+    <div class="cadastro">
 
-    <p>Aprenda música de forma simples, interativa e divertida.</p>
+        <h1>🎵 Bem-vindo!</h1>
 
-    <button>Começar a estudar</button>
+        <p>Antes de começar, queremos conhecer um pouco sobre você.</p>
+
+        <label>Como podemos te chamar?</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <label>Qual sua idade?</label>
+        <input type="number" id="idade" placeholder="Sua idade">
+
+        <label>Qual seu nível musical?</label>
+        <select id="nivel">
+            <option value="">Selecione</option>
+            <option value="Nunca estudei">Nunca estudei música</option>
+            <option value="Iniciante">Iniciante</option>
+            <option value="Intermediário">Intermediário</option>
+            <option value="Avançado">Avançado</option>
+        </select>
+
+        <label>Qual seu principal objetivo na música?</label>
+        <select id="objetivo">
+            <option value="">Selecione</option>
+            <option value="Teoria">Aprender teoria musical</option>
+            <option value="Solfejo">Melhorar meu solfejo</option>
+            <option value="Instrumento">Aprender/tocar melhor meu instrumento</option>
+            <option value="Revisão">Revisar meus conhecimentos</option>
+            <option value="Completo">Aprender música por completo</option>
+        </select>
+
+        <button onclick="salvarPerfil()">Começar minha jornada →</button>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
